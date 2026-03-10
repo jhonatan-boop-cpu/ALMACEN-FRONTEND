@@ -1,70 +1,4 @@
-/* RESET */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family: "Segoe UI", Arial, sans-serif;
-    background:#f1f5f9;
-    color:#1e293b;
-}
-
-/* =======================
-   SIDEBAR
-======================= */
-
-.sidebar{
-    width:260px;
-    height:100vh;
-    background:white;
-    border-right:1px solid #e2e8f0;
-    padding:25px;
-    position:fixed;
-    display:flex;
-    flex-direction:column;
-}
-
-/* LOGO */
-
-.logo img{
-    width:170px;
-    margin-bottom:40px;
-}
-
-/* =======================
-   MENU
-======================= */
-
-.lista{
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-}
-
-.lista a{
-    text-decoration:none;
-    color:#334155;
-    padding:13px 16px;
-    border-radius:8px;
-    font-weight:500;
-    transition:0.25s;
-    display:flex;
-    align-items:center;
-}
-
-.lista a:hover{
-    background:#2563eb;
-    color:white;
-    transform:translateX(4px);
-}
-
-/* =======================
-   CONTENIDO PRINCIPAL
-======================= */
-
+/* CONTENIDO PRINCIPAL */
 .main-contend{
     margin-left:260px;
     height:100vh;
@@ -72,12 +6,10 @@ body{
     justify-content:center;
     align-items:center;
     padding:40px;
+    transition:0.3s ease;
 }
 
-/* =======================
-   TARJETA BIENVENIDA
-======================= */
-
+/* TARJETA BIENVENIDA */
 .welcome{
     background:white;
     width:550px;
@@ -88,8 +20,6 @@ body{
     box-shadow:0 15px 35px rgba(0,0,0,0.08);
     position:relative;
 }
-
-/* línea decorativa superior */
 
 .welcome::before{
     content:"";
@@ -102,15 +32,11 @@ body{
     border-radius:14px 14px 0 0;
 }
 
-/* título */
-
 .welcome h1{
     font-size:30px;
     margin-bottom:15px;
     color:#1e293b;
 }
-
-/* texto */
 
 .welcome p{
     font-size:16px;
@@ -118,41 +44,3 @@ body{
     line-height:1.5;
 }
 
-/* botón opcional */
-
-.welcome button{
-    margin-top:25px;
-    padding:12px 22px;
-    border:none;
-    border-radius:8px;
-    background:#2563eb;
-    color:white;
-    font-size:15px;
-    font-weight:500;
-    cursor:pointer;
-    transition:0.25s;
-}
-
-.welcome button:hover{
-    background:#1d4ed8;
-}
-
-/* =======================
-   RESPONSIVE
-======================= */
-
-@media (max-width:900px){
-
-.sidebar{
-    width:200px;
-}
-
-.main-contend{
-    margin-left:200px;
-}
-
-.welcome{
-    width:90%;
-}
-
-}

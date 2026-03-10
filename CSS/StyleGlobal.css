@@ -1,0 +1,64 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/*Fuente de letra*/
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:#f1f5f9;
+    color:#1e293b;
+}   
+
+/*SIDEBAR*/
+/* BOTON HAMBURGUESA */
+.menu-toggle{
+    display:none;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:260px;
+    height:100vh;
+    background:white;
+    border-right:1px solid #e2e8f0;
+    padding:25px;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction:column;
+    transition:0.3s ease;
+    z-index:1000;
+}
+
+/* LOGO */
+.logo img{
+    width:170px;
+    margin-bottom:40px;
+}
+
+/* MENU */
+.lista{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.lista a{
+    text-decoration:none;
+    color:#334155;
+    padding:13px 16px;
+    border-radius:8px;
+    font-weight:500;
+    transition:0.25s;
+    display:flex;
+    align-items:center;
+}
+
+.lista a:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateX(4px);
+}
